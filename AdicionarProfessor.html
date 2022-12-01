@@ -1,0 +1,60 @@
+<!Doctype html>  
+<html>     
+<head>
+<meta charset="UTF-8">      
+<title>Centro de Educação Tecnológica do Amazonas</Title>  
+</head>  
+<body onload="loadDoc()">
+
+<img src="imagens/logo-cetam-horizontal-simpl-negativo.png" width="250" height="100">
+
+<div class="topnav">
+  <a href="AdicionarProfessorEXCEL.html"> CADASTRAR PLANILHAS </a>  
+  <a href="AdicionarProfessor.html">ADICIONAR PROFESSOR </a>
+  <a href="index.html"> BUSCAR PROFESSOR</a>
+   <a href="AdicionarNovosUsers.html"> ADICIONAR USUÁRIOS </a>
+  <a href="login.html" onclick="SaidaPage()"> SAIR </a>
+  <img id="lupa" src="imagens/lupa.png" width="100" height="100">
+</div>   
+
+<br>
+
+<div id="labuta" >
+<form id="dados" action="phpscripts/comandos.php" method="post">
+  <label for="addprof"> Nome:</label><br>
+  <input type="text" name="add_prof" placeholder="Buscar..." size="100" required>
+  <br>
+  <label for="cpf"> CPF:</label><br>
+  <input type="text" name="cp_f" placeholder="Buscar..." size="100" required>
+  <br>
+  <label for="rg"> RG:</label><br>
+  <input type="text" name="r_g" placeholder="Buscar..." size="100" required>
+  <br>
+  <label for="disc"> Disciplinas elegiveis:</label><br>
+  <input type="text" name="dis_c" placeholder="Buscar..." size="100" required>
+  <br>
+  <label for="dpv">Disponível para viagens? </label>
+  <input type="checkbox" name="dpv_prof" value="1">
+  <br>
+  <label for="AtualCad"> Selecione a opção:</label><br>
+     <select name="AtualCad">
+     <option value="1"> valor </option>
+     <option value="2"> valor 2</option>
+     <option value="3"> valor 3</option>
+     </select>
+     <br>
+     <label for="comment">Comentário:</label>
+     <br>
+     <textarea id="comment" name="comment" rows="4" cols="50" required></textarea>
+     <br>
+  <br>
+</form>
+</div>
+  <input type="submit" id="botao" form="dados" value="ENVIAR" name="atual" >
+
+
+</body>
+<link rel="stylesheet" type="text/css" href="css/estilo_adicionarProf.css">
+<script type="application/javascript" src="javascripts/checklogin.js"></script>
+
+</html>  

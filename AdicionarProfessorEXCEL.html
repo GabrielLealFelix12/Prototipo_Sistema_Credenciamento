@@ -1,0 +1,38 @@
+<!Doctype html>  
+<html>     
+<head>
+<meta charset="UTF-8">      
+<title>Centro de Educação Tecnológica do Amazonas</Title>  
+</head>  
+<body onload="loadDoc()">
+
+<img src="imagens/logo-cetam-horizontal-simpl-negativo.png" width="250" height="100">
+
+<div class="topnav">
+ <a href="AdicionarProfessorEXCEL.html"> CADASTRAR PLANILHAS </a>  
+ <a href="AdicionarProfessor.html">ADICIONAR PROFESSOR </a>
+ <a href="index.html"> BUSCAR PROFESSOR</a>
+ <a href="AdicionarNovosUsers.html"> ADICIONAR USUÁRIOS </a>
+ <a href="login.html" onclick="SaidaPage()"> SAIR </a>
+  <img id="lupa" src="imagens/lupa.png" width="100" height="100">
+</div>   
+
+<br>
+
+<div id="labuta">
+<form id="CadastroExcel" method="post">
+  <label for="CadExcel"> Selecione a opção:</label><br>
+  <select name="CadExcel">
+    <option value="atualizar">Atualizar Cadastro</option>
+    <option value="cadastrar">Cadastrar novos dados</option>
+    <option value="deletar">Deletar Professores</option>
+  </select>
+</form>
+</div>
+  
+<input type="submit" id="busc_botao" form="CadastroExcel" value="BUSCAR">
+
+</body>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+<script type="application/javascript" src="javascripts/checklogin.js"></script>   
+</html>  
